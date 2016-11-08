@@ -44,8 +44,22 @@
 #$(call add-clean-step, find $(OUT_DIR) -type f -name "IGTalkSession*" -print0 | xargs -0 rm -f)
 #$(call add-clean-step, rm -rf $(PRODUCT_OUT)/data/*)
 
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/android-support-v*)
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/support.aidl)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libmedia_native_intermediates)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/lib/libmedia_native.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/symbols/system/lib/libmedia_native.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libmedia_native.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libaudioflinger_intermediates)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libaudioflinger.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libaudiopolicy_intermediates)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libaudiopolicy.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libaudiopolicy_intermediates)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libaudiopolicy.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libaudiopolicyservice_intermediates)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libaudiopolicymanager_intermediates)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libaudiopolicyservice.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libaudiopolicymanager.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libaudiopolicyservice_intermediates)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libaudiopolicymanager_intermediates)
 
 # ************************************************
 # NEWER CLEAN STEPS MUST BE AT THE END OF THE LIST
