@@ -60,7 +60,8 @@ $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libaudiopolicyservice.so
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libaudiopolicymanager.so)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libaudiopolicyservice_intermediates)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/SHARED_LIBRARIES/libaudiopolicymanager_intermediates)
-
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/android-support-v*)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/support.aidl)
 # ************************************************
 # NEWER CLEAN STEPS MUST BE AT THE END OF THE LIST
 # ************************************************
